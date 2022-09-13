@@ -1,9 +1,9 @@
-import React, {  useState, useEffect } from "react";
+import React, {  useEffect, useState } from 'react';
 
-import ItemCount from "../ItemCount";
-import ItemList from "../ItemList";
-import Title from "../Title";
-import { useParams, usesParam } from 'react-router-dom';
+
+import ItemList from '../ItemList';
+import Title from '../Title';
+import { useParams, } from 'react-router-dom';
 
 const games = [
   {id: 1, image: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi0.wp.com%2Fimgs.hipertextual.com%2Fwp-content%2Fuploads%2F2022%2F01%2Fcall-of-duty.jpeg%3Ffit%3D1920%252C1080%26quality%3D50%26strip%3Dall%26ssl%3D1&imgrefurl=https%3A%2F%2Fhipertextual.com%2F2022%2F02%2Fque-no-haya-nuevo-call-of-duty-en-2023&tbnid=9exfDL9_Mw8nkM&vet=12ahUKEwi5uaDnte_5AhWBrZUCHYkGC98QMygBegUIARDgAQ..i&docid=zgiUbg97PGlodM&w=1920&h=1080&q=call%20of%20duty&ved=2ahUKEwi5uaDnte_5AhWBrZUCHYkGC98QMygBegUIARDgAQ",
@@ -37,14 +37,11 @@ export const ItemListConteiner = ({ texto }) => {
     }
   }, [categoriaId])
 
-  const onAdd = (quantity) => {
-    console.log(`Compraste ${quantity} unidades`);
-  }
+  
 
   return (
     <>
       <Title greeting={texto} />
-      <ItemCount initial={1} stock={5} onAdd={onAdd} />
       <ItemList  data={data} />
     </>
   );

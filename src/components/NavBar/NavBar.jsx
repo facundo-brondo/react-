@@ -1,13 +1,13 @@
-import React from "react";
-import CardWidget from "../CardWidget";
-import { NavLink } from "react-router-dom"
+import React from 'react';
+import CardWidget from '../CardWidget';
+import { NavLink } from 'react-router-dom';
 
  export const NavBar = () => {
   return (
     <div className="container">
       <nav className="nav">
         <div className="nav__brand">
-          <NavLink className="nav__link" to='/' >MiMarca</NavLink>
+          <NavLink className="nav__link" to='/'>MiMarca</NavLink>
         </div>
         <ul className="nav__List">
           <li>
